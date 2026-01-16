@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Năm Mới Bính Ngọ 2026</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+:root {
+    --color-red: #b71c1c;
+    --color-gold: #fbc02d;
+    --color-white: #faf8f5;
+    --color-dark: #181c1f;
+    --color-dark-green: #0d4a2e;
+    --font-title: 'Playfair Display', serif;
+    --font-body: 'Roboto', Arial, sans-serif;
+    --radius: 18px;
+    --shadow: 0 4px 24px rgba(183,28,28,0.1);
+    --spacing: 1.5rem;
+    --spacing-lg: 2.2rem;
+    --spacing-xl: 3.3rem;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: var(--color-dark);
+}
+*, *:before, *:after { box-sizing: inherit; }
+body {
+    margin: 0; padding: 0;
+    font-family: var(--font-body);
+    color: #34324f;
+    background: var(--color-dark);
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-title);
+    color: var(--color-red);
+    margin: 0 0 0.8em 0;
+    line-height: 1.18;
+}
+.section-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.7rem);
+    color: var(--color-gold);
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,.12);
+    margin-bottom: 1.3em;
+}
+.section-subtitle {
+    color: #e4cd92;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    font-style: italic;
+}
+a { color: inherit; text-decoration: none; }
+.btn {
+    display: inline-block;
+    padding: .7em 2em;
+    background: linear-gradient(90deg, var(--color-red), var(--color-gold));
+    color: #fff;
+    font-family: var(--font-body);
+    font-weight: 700; font-size: 1.1rem;
+    border: none; border-radius: 30px;
+    box-shadow: 0 3px 18px rgba(183,28,28,.17);
+    letter-spacing: 1px;
+    cursor: pointer; transition: .2s; position: relative; overflow: hidden;
+    outline: none; text-transform: uppercase;
+    user-select: none; z-index: 1;
+    /* Touch friendly */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+.btn:before {
+    content: '';
+    position: absolute; top: 0; left: -80%;
+    width: 100%; height: 100%;
+    background: rgba(251,192,45,0.2);
+    z-index: 2; transition: left .32s cubic-bezier(.47,1.64,.41,.8);
+}
+.btn:hover:before {
+    left: 100%;
+}
+.btn:hover, .btn:focus {
+    box-shadow: 0 6px 32px rgba(251,192,45,0.27);
+    filter: brightness(1.08);
+}
+.hero {
+    position: relative;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-dark) 60%, var(--color-dark-green) 100%);
+    overflow: hidden;
+}
+.hero-overlay {
+    position: absolute; left:0; top:0; right:0; bottom:0;
+    background-image: url('https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover; background-position: center;
+    opacity: .19; z-index: 1;
+    filter: grayscale(.2) blur(2px);
+    pointer-events: none;
+}
+.hero-content {
+    position: relative; z-index: 3;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin-top: -2rem;
+}
+.hero-title {
+    font-size: clamp(2.1rem, 7vw, 4.2rem);
+    font-weight: 900;
+    line-height: 1.16; margin-bottom: .6em;
+    color: var(--color-white);
+}
+.hero-title .highlight {
+    background: linear-gradient(90deg, var(--color-red) 60%, var(--color-gold) 100%);
+    background-clip: text; -webkit-background-clip: text;
+    color: transparent; -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--color-gold);
+    margin-bottom: 2em;
+    letter-spacing: .7px;
+}
+.hero-horse {
+    position: absolute; right: 6vw; bottom: 14vh;
+    font-size: min(28vw,220px);
+    z-index: 2;
+    opacity: 0.18;
+    filter: blur(0.2px) drop-shadow(0 4px 40px #faeab03a);
+    user-select: none;
+    pointer-events: none;
+    animation: horseMove 12s infinite linear alternate;
+}
+@keyframes horseMove {
+    0%,100% {transform:translateY(0);}
+    50% {transform: translateY(-18px);}
+}
+.countdown-section {
+    background: linear-gradient(135deg, var(--color-dark-green), var(--color-dark) 75%);
+    padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+}
+.countdown-timer {
+    display: flex; flex-wrap: wrap;
+    justify-content: center; align-items: center;
+    gap: 1.2em;
+    margin: 2.7em 0 1.3em 0;
+}
+.countdown-item {
+    background: rgba(251,192,45,0.05);
+    border: 2px solid var(--color-gold);
+    border-radius: 1em;
+    padding: .7em 1.8em;
+    text-align: center;
+    min-width: 64px; transition: .3s;
+}
+.countdown-item span:first-child {
+    display: block;
+    font-size: 2.3rem; font-family: 'Courier New',monospace;
+    color: var(--color-gold);
+    font-weight: 900;
+    margin-bottom: .18em;
+}
+.countdown-item .label {
+    font-size:.91rem;
+    letter-spacing: .5px;
+    color: var(--color-red);
+    font-weight: 500;
+}
+.sep {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--color-gold);
+    user-select: none;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 75%, 100% { opacity: 1; }
+    40%, 60% { opacity:.38;}
+}
+.countdown-date {
+    text-align: center;
+    color: var(--color-gold);
+    font-size: 1.08rem;
+}
+.about-section {
+    background: var(--color-dark);
+    padding: var(--spacing-xl) 0;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+.about-card {
+    background: linear-gradient(135deg,rgba(255,255,255,0.05),rgba(183,28,28,0.05));
+    border: 1.8px solid var(--color-gold);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing);
+    transition: .25s;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-card:hover {
+    border-color: var(--color-red); box-shadow: 0 6px 32px rgba(183,28,28,0.09);
+    filter: brightness(1.06);
+}
+.about-icon {
+    font-size: 2.2em;
+    margin-bottom: .5em;
+}
+.about-card h3 { color: var(--color-gold); margin-bottom: .4em; }
+.about-card p { color: #f1f1f1; font-size: 1em;}
+.about-details {
+    background: linear-gradient(90deg, rgba(251,192,45,.07),rgba(183,28,28,.04));
+    padding: 1.3em .9em;
+    border-radius: var(--radius);
+    border: 1.3px solid var(--color-gold);
+    text-align: center;
+}
+.about-details h3 { color: var(--color-gold); margin-bottom:.7em; }
+.calendar-info {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 2em;
+    font-size: 1.01em; margin-top: .3em;
+}
+.calendar-label { color: var(--color-red); font-weight: 600;}
+/* Traditions Section */
+.traditions-section {
+    background: linear-gradient(135deg, #0d4a2e 50%, var(--color-dark) 100%);
+    padding: var(--spacing-xl) 0;
+}
+.traditions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(218px,1fr));
+    gap: var(--spacing-lg);
+}
+.trad-card {
+    display: flex; gap: 1em;
+    align-items: flex-start;
+    padding: var(--spacing);
+    background: rgba(183,28,28,.08);
+    border: 1.4px solid var(--color-gold);
+    border-radius: var(--radius);
+    transition: .22s;
+    color: var(--color-white);
+}
+.trad-card:hover {
+    border-color: var(--color-red);
+    background: rgba(183,28,28,.18);
+    transform: scale(1.03) translateY(-2px);
+    box-shadow: 0 6px 21px rgba(251,192,45,0.08);
+}
+.trad-icon {
+    font-size: 2.1em;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.cuisine-section { background: var(--color-dark); padding: var(--spacing-xl) 0; }
+.cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+    gap: var(--spacing-lg);
+}
+.cuisine-card {
+    background: linear-gradient(120deg,rgba(251,192,45,0.11),rgba(183,28,28,0.07));
+    border: 1.3px solid var(--color-gold);
+    border-radius: var(--radius);
+    text-align: center;
+    color: var(--color-white);
+    padding: var(--spacing);
+    transition: .2s;
+    cursor: pointer; user-select: none;
+}
+.cuisine-card:hover,.cuisine-card:focus {
+    transform: scale(1.055) translateY(-7px);
+    box-shadow: 0 10px 28px rgba(251,192,45,0.21);
+    border-color: var(--color-red);
+}
+.cuisine-img {
+    font-size: 2.35em;
+    margin-bottom: .7em;
+    transition: .18s;
+}
+.cuisine-card:hover .cuisine-img { transform: scale(1.15) rotate(4deg);}
+.cuisine-card h3 {
+    color: var(--color-gold);
+    margin-bottom: .4em;
+}
+.cuisine-card p { color: #f9f6e2; font-size: .99em;}
+/* Wishes Section */
+.wishes-section {
+    background: linear-gradient(135deg,#0d4a2e,var(--color-dark) 85%);
+    padding: var(--spacing-xl) 0;
+}
+.wishes-slider {
+    position: relative;
+    margin: 2.8em auto 2em auto;
+    max-width: 550px;
+}
+.wishes-carousel {
+    display: flex;
+    overflow: hidden;
+    border-radius: var(--radius);
+    min-height: 185px;
+    position: relative;
+}
+.wish-slide {
+    flex: 1 0 100%;
+    min-width: 100%;
+    background: linear-gradient(138deg,rgba(183,28,28,0.19),rgba(251,192,45,0.12));
+    border: 2px solid var(--color-gold);
+    border-radius: var(--radius);
+    padding: 2.5em .8em;
+    text-align: center;
+    color: var(--color-white);
+    transition: all .4s;
+    display: none;
+    position: absolute; /* For slide animation */
+    left: 0; top: 0; right: 0; bottom: 0;
+    opacity: 0;
+    z-index: 0;
+}
+.wish-slide.active {
+    display: block; opacity: 1; z-index: 1;
+    animation: fadeSlide .85s;
+}
+@keyframes fadeSlide {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+.wish-text {
+    font-size: 1.7em;
+    color: var(--color-gold);
+    margin-bottom: .45em;
+    font-weight: 900;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    background: linear-gradient(135deg, var(--color-red), var(--color-gold));
+    color: #fff;
+    border: none;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    font-size: 1.38em;
+    cursor: pointer; transition: .14s;
+    z-index: 10;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px rgba(183,28,28,0.11);
+    outline: none;
+}
+.slider-btn:hover,.slider-btn:focus { box-shadow:0 5px 20px rgba(251,192,45,0.14);}
+.slider-prev { left: -26px;}
+.slider-next { right: -26px;}
+.slider-indicators {
+    display: flex; justify-content: center; gap: 10px;
+    margin-top: 1.1em;
+}
+.indicator {
+    width: 12px; height: 12px; border-radius: 50%;
+    background: rgba(251,192,45,0.42);
+    border: 2px solid var(--color-gold);
+    cursor: pointer;
+    transition: .2s; margin: 1px 3px;
+}
+.indicator.active {
+    background: var(--color-gold);
+    width: 24px; border-radius: 8px;
+}
+.footer {
+    position: relative;
+    padding: var(--spacing-lg) 0 3.7em 0;
+    background: var(--color-dark);
+    border-top: 3px solid var(--color-gold);
+    overflow: hidden;
+}
+#fireworksCanvas {
+    position: absolute;
+    inset: 0;
+    width: 100vw; height: 100%;
+    z-index: 1;
+    pointer-events: auto;
+    touch-action: manipulation;
+}
+.footer-content {
+    position: relative; z-index: 2; text-align: center; color: #fff;
+}
+.footer-text {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin-bottom: .4em;
+    margin-top:.7em;
+}
+.footer-copyright {
+    font-size: .98em;
+    color: #b7a986;
+}
+/* AOS override for better effect on dark BG */
+[data-aos] {
+    transition-property: opacity, transform;
+}
+[data-aos][data-aos][data-aos-delay="0"] {
+    transition-delay: 0s;
+}
+[data-aos="fade-up"] {
+    opacity: 0; transform: translateY(30px) scale(1);
+}
+[data-aos="fade-up"].aos-animate {
+    opacity: 1; transform: translateY(0) scale(1);
+}
+[data-aos="fade-right"] {
+    opacity: 0; transform: translateX(-30px);
+}
+[data-aos="fade-right"].aos-animate {
+    opacity: 1; transform: none;
+}
+[data-aos="fade-left"] {
+    opacity: 0; transform: translateX(30px);
+}
+[data-aos="fade-left"].aos-animate {
+    opacity: 1; transform: none;
+}
+[data-aos="zoom-in"] {
+    opacity: 0; transform: scale(.8);
+}
+[data-aos="zoom-in"].aos-animate {
+    opacity: 1; transform: scale(1);
+}
+/* Responsive */
+@media (max-width: 980px) {
+    .container { max-width: 98vw; padding: 0 1em;}
+    .about-grid, .cuisine-grid, .traditions-list { gap: 1.1em;}
+}
+@media (max-width: 700px) {
+    .hero-title { font-size: 1.7rem; }
+    .countdown-item span:first-child { font-size: 1.27em;}
+    .about-grid, .cuisine-grid, .traditions-list { grid-template-columns: 1fr;}
+    .footer { padding: var(--spacing) 0 2em 0; }
+    .button, .btn { font-size: .99rem;}
+    .slider-btn { width: 39px; height: 39px; }
+    .slider-prev, .slider-next { left:-12px; right:-12px;}
+}
+@media (max-width: 450px) {
+    .container {padding:0 .5em;}
+    .section-title { font-size: 1.07rem;}
+    .hero-content { margin-top:0;}
+    .countdown-timer { gap: .4em;}
+    .countdown-section,.about-section,.cuisine-section,.traditions-section,.wishes-section { padding:2.1em 0;}
+    /* Wishes: allow swipe */
+    .wishes-carousel, .wishes-slider { overflow-x: auto; scroll-snap-type: x mandatory; }
+    .wish-slide { min-width: 90vw; scroll-snap-align: center;}
+}
+@media (hover:none) and (pointer:coarse) {
+    .cuisine-card:hover, .about-card:hover, .trad-card:hover {
+        transform: none; box-shadow: none; border-color: var(--color-gold);
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="hero-title">Chúc Mừng Năm Mới<br><span class="highlight">Bính Ngọ 2026</span></h1>
+            <p class="hero-subtitle">Mã Đáo Thành Công – Vạn Sự Như Ý</p>
+            <a href="#about" class="btn btn-primary">Khám Phá Tết 2026</a>
+        </div>
+        <div class="hero-horse" aria-hidden="true">🐎</div>
+    </section>
+    <!-- COUNTDOWN SECTION -->
+    <section class="countdown-section" id="countdown">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Đếm Ngược Đến Giao Thừa</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Thời gian còn lại đến mùng 1 Tết Bính Ngọ 2026</p>
+            <div class="countdown-timer" data-aos="zoom-in" data-aos-delay="300">
+                <div class="countdown-item"><span id="days">00</span><span class="label">Ngày</span></div>
+                <div class="sep">:</div>
+                <div class="countdown-item"><span id="hours">00</span><span class="label">Giờ</span></div>
+                <div class="sep">:</div>
+                <div class="countdown-item"><span id="minutes">00</span><span class="label">Phút</span></div>
+                <div class="sep">:</div>
+                <div class="countdown-item"><span id="seconds">00</span><span class="label">Giây</span></div>
+            </div>
+            <p class="countdown-date" data-aos="fade-up" data-aos-delay="400">
+                <strong>17 tháng 2 năm 2026</strong> (Mùng 1 Tết Bính Ngọ)
+            </p>
+        </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Năm Bính Ngọ - Năm Con Ngựa</h2>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="about-icon">🐴</div>
+                    <h3>Biểu Tượng Năm Ngựa</h3>
+                    <p>Ngựa đại diện cho sự nhanh nhạy, sức sống và khát vọng tự do. Người tuổi Ngựa thường lạc quan, năng nổ và yêu thích khám phá.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-icon">✨</div>
+                    <h3>Ý Nghĩa Bính Ngọ</h3>
+                    <p>"Bính" thuộc hành Hỏa rực rỡ, "Ngọ" là con Ngựa, tượng trưng cho năm phát triển, bùng nổ năng lượng và vận hội mới rực sáng!</p>
+                </div>
+                <div class="about-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="about-icon">🎊</div>
+                    <h3>Lời Chúc May Mắn</h3>
+                    <p>"Mã Đáo Thành Công" – mong bạn và gia đình tiến bước thành công rực rỡ, an khang thịnh vượng suốt năm mới!</p>
+                </div>
+            </div>
+            <div class="about-details" data-aos="fade-up" data-aos-delay="400">
+                <h3>Lịch Tết Bính Ngọ 2026</h3>
+                <div class="calendar-info">
+                    <div><span class="calendar-label">Tết dương lịch:</span> 17/02/2026</div>
+                    <div><span class="calendar-label">Tết âm lịch:</span> Mùng 1 tháng Giêng (Bính Ngọ)</div>
+                    <div><span class="calendar-label">Thời gian:</span> 17-19/02/2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRADITIONS SECTION -->
+    <section class="traditions-section" id="traditions">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Phong Tục Truyền Thống Ngày Tết</h2>
+            <div class="traditions-list">
+                <div class="trad-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="trad-icon">🧹</div>
+                    <div>
+                        <h3>Dọn Dẹp Nhà Cửa</h3>
+                        <p>Làm sạch, trang hoàng để đón điều may, tiễn xui cũ năm qua.</p>
+                    </div>
+                </div>
+                <div class="trad-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trad-icon">🙏</div>
+                    <div>
+                        <h3>Cúng Tổ Tiên</h3>
+                        <p>Bày cỗ, tưởng nhớ ông bà bằng tấm lòng thành kính đầu năm.</p>
+                    </div>
+                </div>
+                <div class="trad-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="trad-icon">🏮</div>
+                    <div>
+                        <h3>Xông Đất</h3>
+                        <p>Người đầu tiên bước vào nhà - mong mang lộc phúc tới suốt năm.</p>
+                    </div>
+                </div>
+                <div class="trad-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trad-icon">🎁</div>
+                    <div>
+                        <h3>Lì Xì Mừng Tuổi</h3>
+                        <p>Nhận lì xì đỏ với lời chúc tốt đẹp, gửi gắm tài lộc hạnh phúc.</p>
+                    </div>
+                </div>
+                <div class="trad-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="trad-icon">👨‍👩‍👧‍👦</div>
+                    <div>
+                        <h3>Chúc Tết Người Thân</h3>
+                        <p>Chúc nhau sức khỏe – hạnh phúc – sum vầy, gắn kết gia đình.</p>
+                    </div>
+                </div>
+                <div class="trad-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trad-icon">🌸</div>
+                    <div>
+                        <h3>Hoa Mai, Hoa Đào</h3>
+                        <p>Trang trí hoa tươi chào năm mới, cầu mong tài vượng đong đầy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CUISINE SECTION -->
+    <section class="cuisine-section" id="cuisine">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Ẩm Thực Đặc Trưng Ngày Tết</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Những món ăn truyền thống gắn liền với Tết Việt</p>
+            <div class="cuisine-grid">
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cuisine-img">🥟</div>
+                    <h3>Bánh Chưng</h3>
+                    <p>Bánh vuông xanh, nhân thịt đậu thơm bùi – linh hồn ngày Tết miền Bắc.</p>
+                </div>
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="140">
+                    <div class="cuisine-img">🌮</div>
+                    <h3>Bánh Tét</h3>
+                    <p>Bánh hình trụ miền Nam, dẻo bùi thơm vị gạo nếp, đậu xanh, thịt.</p>
+                </div>
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="180">
+                    <div class="cuisine-img">🧅</div>
+                    <h3>Dưa Hành</h3>
+                    <p>Chua nhẹ, giòn dai giúp cân bằng bữa tiệc Tết đầy đặn bổ dưỡng.</p>
+                </div>
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="220">
+                    <div class="cuisine-img">🍖</div>
+                    <h3>Thịt Kho Tàu</h3>
+                    <p>Thịt ba chỉ, trứng kho nước dừa vàng óng – món đặc trưng Nam Bộ.</p>
+                </div>
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="260">
+                    <div class="cuisine-img">🍬</div>
+                    <h3>Mứt Tết</h3>
+                    <p>Đủ màu sắc – dừa, bí, me, gừng... ngon miệng, đẹp mắt ngày Xuân.</p>
+                </div>
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cuisine-img">🍗</div>
+                    <h3>Gà Luộc</h3>
+                    <p>Gà luộc nguyên con, vàng óng, lễ vật dâng cúng và thưởng thức sum vầy.</p>
+                </div>
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="340">
+                    <div class="cuisine-img">🍌</div>
+                    <h3>Mâm Ngũ Quả</h3>
+                    <p>5 loại quả tươi cầu mong phước lành, tài lộc, bình an trọn vẹn năm mới.</p>
+                </div>
+                <div class="cuisine-card" data-aos="fade-up" data-aos-delay="380">
+                    <div class="cuisine-img">🌰</div>
+                    <h3>Bánh Quy/Bánh Công</h3>
+                    <p>Tặng nhau vị ngọt đầu năm – sẻ chia niềm vui, sum vầy khởi đầu mới.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WISHES SECTION -->
+    <section class="wishes-section" id="wishes">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Những Lời Chúc Tết Đẹp</h2>
+            <div class="wishes-slider" data-aos="zoom-in" data-aos-delay="200">
+                <div class="wishes-carousel" id="wishesCarousel">
+                    <div class="wish-slide">
+                        <h3 class="wish-text">An Khang Thịnh Vượng</h3>
+                        <p>Mong gia đình luôn an vui, khỏe mạnh, vạn sự như ý.</p>
+                    </div>
+                    <div class="wish-slide">
+                        <h3 class="wish-text">Mã Đáo Thành Công</h3>
+                        <p>Năm Ngựa mang lại cơ hội vàng cho công việc và kinh doanh.</p>
+                    </div>
+                    <div class="wish-slide">
+                        <h3 class="wish-text">Sinh Tài Lộc Đến Nhà</h3>
+                        <p>Mong tài lộc, may mắn tìm đến nhà bạn suốt năm mới.</p>
+                    </div>
+                    <div class="wish-slide">
+                        <h3 class="wish-text">Gia Đình Hạnh Phúc</h3>
+                        <p>Chúc nhà nhà luôn ấm áp, sum vầy, tràn ngập yêu thương.</p>
+                    </div>
+                    <div class="wish-slide">
+                        <h3 class="wish-text">Sức Khỏe Dồi Dào</h3>
+                        <p>Chúc mọi người dồi dào sức khỏe, an bình cả năm.</p>
+                    </div>
+                    <div class="wish-slide">
+                        <h3 class="wish-text">Rộng Mở Tương Lai</h3>
+                        <p>Thăng tiến, phát triển, mọi điều suôn sẻ như ý muốn.</p>
+                    </div>
+                </div>
+                <button class="slider-btn slider-prev" id="wishPrev" aria-label="Lùi">❮</button>
+                <button class="slider-btn slider-next" id="wishNext" aria-label="Tiến">❯</button>
+            </div>
+            <div class="slider-indicators" id="indicators"></div>
+        </div>
+    </section>
+    <!-- FOOTER WITH FIREWORKS -->
+    <footer class="footer">
+        <canvas id="fireworksCanvas"></canvas>
+        <div class="footer-content">
+            <p class="footer-text">Chúc Mừng Năm Mới Bính Ngọ 2026</p>
+            <p class="footer-copyright">
+                © 2026 - Tết Bính Ngọ. Thiết kế với tình yêu Việt Nam. 🇻🇳
+            </p>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+// ==========================
+// ĐỒNG HỒ ĐẾM NGƯỢC
+// ==========================
+function updateCountdown() {
+    // mùng 1 Tết Âm lịch = 17/02/2026, lúc 0h00
+    const target = new Date(2026,1,17,0,0,0).getTime();
+    const now = Date.now();
+    let diff = target - now;
+    if(diff<0) diff = 0;
+    const d = Math.floor(diff/(1000*60*60*24));
+    const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+    const m = Math.floor((diff%(1000*60*60))/(1000*60));
+    const s = Math.floor((diff%(1000*60))/1000);
+    document.getElementById('days').textContent = String(d).padStart(2, '0');
+    document.getElementById('hours').textContent = String(h).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+// ==========================
+// WISHES (LỜI CHÚC) SLIDER
+// ==========================
+const wishSlides = document.querySelectorAll('.wish-slide');
+let currWish = 0;
+function showWish(idx) {
+    wishSlides.forEach((slide,i)=>{
+        slide.classList.toggle('active', i===idx);
+    });
+    // set indicator dot
+    document.querySelectorAll('.indicator').forEach((dot,i)=>
+        dot.classList.toggle('active', i===idx));
+}
+function nextWish() { currWish = (currWish+1)%wishSlides.length; showWish(currWish);}
+function prevWish() { currWish = (currWish-1+wishSlides.length)%wishSlides.length; showWish(currWish);}
+document.getElementById('wishNext').addEventListener('click', nextWish);
+document.getElementById('wishPrev').addEventListener('click', prevWish);
+// Create indicators
+(function(){
+    const dots = document.getElementById('indicators');
+    wishSlides.forEach((slide,i)=>{
+        const dot = document.createElement('div');
+        dot.className = 'indicator'+(i===0?' active':'');
+        dot.addEventListener('click',()=>{currWish = i; showWish(i);});
+        dots.appendChild(dot);
+    });
+    showWish(0);
+})();
+setInterval(nextWish, 8500); // auto play 8.5s
+
+// ==========================
+// PHÁO HOA CANVAS
+// ==========================
+const canvas = document.getElementById('fireworksCanvas');
+const ctx = canvas.getContext('2d');
+// fit canvas on resize/device rotate
+function resizeCanvas(){
+    canvas.width = window.innerWidth;
+    canvas.height = document.querySelector('.footer').offsetHeight;
+}
+resizeCanvas();
+window.addEventListener('resize',resizeCanvas);
+
+// Firework particle
+class Firework {
+    constructor(x,y) {
+        this.x = x; this.y = y;
+        this.particles = [];
+        const n = 24+Math.floor(Math.random()*20);
+        const colors = ['#fbc02d','#b71c1c','#fff3ce','#fffde7','#ffd700','#e53935'];
+        for(let i=0;i<n;i++) {
+            const angle = i*(2*Math.PI)/n;
+            const speed = 2.2+Math.random()*2.7;
+            this.particles.push({
+                x:this.x,y:this.y,
+                vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,
+                alpha:1,
+                color: colors[Math.floor(Math.random()*colors.length)],
+                size:2+Math.random()*2.1
+            });
+        }
+    }
+    update() {
+        this.particles.forEach(p=>{
+            p.x+=p.vx; p.y+=p.vy;
+            p.vy+=.04; // gravity
+            p.alpha-=.013+Math.random()*0.004;
+        });
+        this.particles = this.particles.filter(p=>p.alpha>0.04);
+    }
+    draw(ctx) {
+        this.particles.forEach(p=>{
+            ctx.save();
+            ctx.globalAlpha = p.alpha;
+            ctx.beginPath();
+            ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+            ctx.restore();
+        });
+    }
+    alive() { return this.particles.length>0; }
+}
+let fireworks = [];
+function animate() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    fireworks = fireworks.filter(fw=>fw.alive());
+    fireworks.forEach(fw=>{
+        fw.update();
+        fw.draw(ctx);
+    });
+    requestAnimationFrame(animate);
+}
+animate();
+// auto firework
+setInterval(()=>{
+    for(let i=0;i<2;i++)
+        setTimeout(()=>createFirework(),400*i);
+}, 1700);
+function createFirework(x=null,y=null) {
+    if(!x){
+        x = Math.random()*canvas.width*0.85 + canvas.width*0.1* (Math.random()>.4?0:1);
+        y = Math.random()*canvas.height*0.4 + canvas.height*0.08;
+    }
+    fireworks.push(new Firework(x,y));
+}
+canvas.addEventListener('click',e=>{
+    createFirework(e.clientX, e.clientY-canvas.getBoundingClientRect().top);
+});
+
+// ==========================
+// SCROLL EFFECT FOR AOS
+// ==========================
+document.addEventListener('DOMContentLoaded',function(){
+    if(typeof AOS !== 'undefined') {
+        AOS.init({duration:900,offset:60,once:false});
+    }
+});
+
+// ==========================
+// SMOOTH SCROLL ANCHOR
+// ==========================
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+    anchor.addEventListener('click',function(e){
+        const href = this.getAttribute('href');
+        if(href.length > 1){
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if(target){
+                target.scrollIntoView({behavior:'smooth',block:'start'});
+            }
+        }
+    });
+});
+// ==========================
+// CONSOLE MESSAGE
+// ==========================
+console.log('%cChúc Mừng Năm Mới Bính Ngọ 2026! 🐴','color:#b71c1c;font-size:20px;font-weight:bold;');
+console.log('%cMã Đáo Thành Công - Vạn Sự Như Ý','color:#fbc02d;font-size:16px;font-style:italic;');
+    </script>
+</body>
+</html>
